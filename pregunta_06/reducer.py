@@ -4,7 +4,7 @@
 import sys
 
 curletter = None
-minamount = 0
+minamount = 1000
 maxamount = 0
 
 if __name__ == "__main__":
@@ -28,4 +28,5 @@ if __name__ == "__main__":
                     curletter, maxamount, minamount))
                 curletter = letter
                 minamount = amount
+                maxamount = amount
     sys.stdout.write("{}\t{}\t{}\n".format(curletter, maxamount, minamount))
