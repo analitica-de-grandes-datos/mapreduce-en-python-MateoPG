@@ -1,7 +1,8 @@
 #
 import os
 
-result = os.popen("cat data.csv | python3 mapper.py | sort | python3 reducer.py").read()
+result = os.popen(
+    "cat data.csv | python3 mapper.py | sort | python3 reducer.py").read()
 
 lines = [line.strip().replace("\n", "") for line in result.split("\n")]
 
